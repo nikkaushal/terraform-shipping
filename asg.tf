@@ -9,7 +9,7 @@ module "asg" {
   HEALTH          = "/health"
   APP_ARTIFACT_VERSION = var.APP_ARTIFACT_VERSION
   ASG_LOAD_AVERAGE = "40.0"
-  ASG_MAX_INSTANCES = var.ASG_MAX_INSTANCES
+ // ASG_MAX_INSTANCES = var.ASG_MAX_INSTANCES
 }
 
 resource "aws_lb_listener_rule" "shipping" {
